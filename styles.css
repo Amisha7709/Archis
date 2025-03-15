@@ -5,6 +5,7 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f8f9fc;
+    width: 100vw;
 }
 
 /* Navbar Styles */
@@ -109,4 +110,52 @@ body {
     margin-top: 20px;
     color: #007b5f;
     font-size: 16px;
+}
+
+.trusted-brands {
+    text-align: center;
+    padding: 20px 60px 20px 60px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.trusted-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.brand-logos img {
+    max-width: 100px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+.brand-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .brand-logos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .brand-logos img {
+        max-width: 80px;
+    }
 }
