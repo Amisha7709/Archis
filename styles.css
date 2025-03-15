@@ -115,11 +115,11 @@ body {
 
 
 /* Hero Section */
-.hero-content{
+.hero-content {
     display: flex;
 }
 
-#hero4{
+#hero4 {
     display: none;
 }
 
@@ -228,16 +228,16 @@ body {
     #hero1 {
         display: none;
     }
-    
+
     #hero3 {
         display: none;
     }
 
-    #hero4{
+    #hero4 {
         display: block;
     }
 
-    .hero-content{
+    .hero-content {
         display: flex;
         flex-direction: column;
     }
@@ -582,4 +582,17 @@ h1 {
     font-size: 16px;
     color: #666;
     margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stat-box {
+        width: 50%;
+        margin-bottom: 20px;
+    }
 }
