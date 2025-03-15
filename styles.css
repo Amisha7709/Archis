@@ -846,6 +846,7 @@ h1 {
     max-width: 1100px;
     margin: auto;
     margin-bottom: 50px;
+    padding: 50px 20px;
 }
 
 .news-header {
@@ -871,10 +872,18 @@ h1 {
     font-size: 16px;
 }
 
+.mob-see-all {
+    display: none;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #00334e;
+    font-weight: bold;
+}
+
 .news-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
     gap: 30px;
+    overflow-y: scroll;
 }
 
 .news-card {
@@ -883,6 +892,7 @@ h1 {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    min-width: 300px;
 }
 
 .news-card:hover {
@@ -923,4 +933,14 @@ h1 {
     font-weight: bold;
     color: #00334e;
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .see-all{
+        display: none;
+    }
+
+    .mob-see-all{
+        display: block;
+    }
 }
