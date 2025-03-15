@@ -5,7 +5,6 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f8f9fc;
-    width: 100vw;
 }
 
 /* Navbar Styles */
@@ -15,12 +14,6 @@ body {
     align-items: center;
     padding: 20px 60px;
     background: white;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0b2d5c;
 }
 
 .nav-links {
@@ -114,13 +107,12 @@ body {
 
 .trusted-brands {
     text-align: center;
-    padding: 20px 60px 20px 60px;
+    padding: 20px;
     background-color: #f8f8f8;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .trusted-text {
