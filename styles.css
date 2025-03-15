@@ -918,3 +918,82 @@ h1 {
         display: block;
     }
 }
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: black;
+    text-align: left;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #fbc02d;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.cta-button span {
+    font-size: 20px;
+}
+
+.no-credit {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.banner-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.decor-icons {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+}
+
+.star { background: #043A53; color: white; margin-left: -265px; margin-top: -132px; }
+.search { background-color: #FBC02D; color: white; margin-top: -335px; margin-left: -115px; }
+.crown { background-color: gray; color: white; margin-left: -720px; margin-top: -155px;}
