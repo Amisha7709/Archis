@@ -316,6 +316,10 @@ p {
         font-size: 30px;
     }
 
+    .text-content{
+        flex-direction: column;
+    }
+
     .play-button {
         width: 50px;
         height: 50px;
