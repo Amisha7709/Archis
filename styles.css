@@ -610,7 +610,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-/* Left Content */
 .content {
     flex: 1;
     max-width: 500px;
@@ -645,7 +644,6 @@ h1 {
     color: #777;
 }
 
-/* Button */
 .cta-btn {
     background-color: #00334e;
     color: white;
@@ -663,7 +661,6 @@ h1 {
     font-size: 18px;
 }
 
-/* Right Side (Image Section) */
 .founder-image {
     position: relative;
     flex: 1;
@@ -696,7 +693,6 @@ h1 {
 }
 
 .testimonials {
-    max-width: 1100px;
     margin: auto;
     padding: 50px 20px;
     text-align: center;
@@ -723,24 +719,19 @@ h1 {
     font-weight: bold;
 }
 
-/* Testimonials Container */
 .testimonial-container {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-/* Testimonial Card */
 .testimonial-card {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 45%;
     min-width: 300px;
     text-align: left;
-    position: relative;
+    position: relative;             
 }
 
 .quote-icon {
@@ -758,7 +749,6 @@ h1 {
     line-height: 1.5;
 }
 
-/* Profile Section */
 .profile {
     display: flex;
     align-items: center;
@@ -811,24 +801,8 @@ h1 {
         text-align: center;
     }
 
-    .testimonial-container {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 15px;
-        padding-bottom: 20px;
-    }
-
-    .testimonial-container::-webkit-scrollbar {
-        display: none;
-    }
-
-    .testimonial-card {
-        flex: 0 0 80%;
-        scroll-snap-align: center;
-        min-width: 280px;
-        max-width: 350px;
-        margin: auto;
+    .testimonial-container{
+        overflow: auto;
     }
 
     .carousel-dots {
