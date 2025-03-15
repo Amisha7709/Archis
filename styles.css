@@ -193,6 +193,8 @@ body {
     font-size: 16px;
     color: #666;
     margin-bottom: 15px;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 .brand-logos {
@@ -200,6 +202,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: auto;
 }
 
 .brand-logos img {
