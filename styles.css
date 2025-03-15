@@ -1,6 +1,6 @@
 /* Apply styles to the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     margin: 0;
@@ -16,16 +16,12 @@ header {
 
 /* Button styles */
 .btn {
-    background-color: #007BFF;
     color: white;
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 50%;
     margin-top: 20px;
-}
+    background: #043A53;
 
-.btn:hover {
-    background-color: #0056b3;
 }
