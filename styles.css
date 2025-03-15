@@ -675,3 +675,22 @@ h1 {
     width: 100%;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .founder-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-image {
+        margin-top: 20px;
+    }
+
+    .cta-btn {
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
