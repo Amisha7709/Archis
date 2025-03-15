@@ -39,7 +39,8 @@ body {
     gap: 15px;
 }
 
-.login, .signup {
+.login,
+.signup {
     border: none;
     padding: 8px 15px;
     font-size: 14px;
@@ -89,14 +90,17 @@ body {
     font-weight: 500;
 }
 
-.mobile-menu .login, .mobile-menu .signup {
+.mobile-menu .login,
+.mobile-menu .signup {
     width: 100%;
     text-align: center;
 }
 
 /* ✅ Responsive Navbar */
 @media (max-width: 768px) {
-    .nav-links, .nav-buttons {
+
+    .nav-links,
+    .nav-buttons {
         display: none;
     }
 
@@ -111,6 +115,14 @@ body {
 
 
 /* Hero Section */
+.hero-content{
+    display: flex;
+}
+
+#hero4{
+    display: none;
+}
+
 .hero {
     padding: 100px 20px;
 }
@@ -131,10 +143,10 @@ body {
     margin-bottom: 20px;
 }
 
-.arrow{
-    background-color: #0b2d5c; 
-    color: white; 
-    padding: 5px; 
+.arrow {
+    background-color: #0b2d5c;
+    color: white;
+    padding: 5px;
     border-radius: 50%;
 }
 
@@ -212,6 +224,23 @@ body {
     .brand-logos img {
         max-width: 80px;
     }
+
+    #hero1 {
+        display: none;
+    }
+    
+    #hero3 {
+        display: none;
+    }
+
+    #hero4{
+        display: block;
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .hero-section {
@@ -246,7 +275,8 @@ body {
 }
 
 .highlight {
-    color: #f2b632; /* Yellow Highlight */
+    color: #f2b632;
+    /* Yellow Highlight */
 }
 
 .text-content p {
@@ -316,7 +346,7 @@ body {
         font-size: 30px;
     }
 
-    .text-content{
+    .text-content {
         flex-direction: column;
     }
 
@@ -515,4 +545,11 @@ h1 {
 
 .cta-button:hover {
     background: #005580;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bridge-container {
+        flex-direction: column;
+    }
 }
