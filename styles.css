@@ -599,3 +599,79 @@ h1 {
         margin-bottom: 20px;
     }
 }
+
+.founder-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Left Content */
+.content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #111;
+}
+
+.quote {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.founder-info {
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+}
+
+.designation {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Button */
+.cta-btn {
+    background-color: #00334e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-btn span {
+    font-size: 18px;
+}
+
+/* Right Side (Image Section) */
+.founder-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.founder-img {
+    width: 100%;
+    border-radius: 10px;
+}
