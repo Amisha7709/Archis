@@ -1129,3 +1129,55 @@ h1 {
         width: 25px;
     }
 }
+
+.footer-bottom {
+    background-color: #f4f7f9;
+    padding: 15px 0;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #89949c;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #89949c;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #89949c;
+}
+
+select {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #89949c;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+}
