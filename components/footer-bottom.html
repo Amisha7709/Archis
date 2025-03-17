@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer-bottom </title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+        .footer-bottom {
+            background-color: #f4f7f9;
+            padding: 15px 0;
+        }
+
+        .footer-bottom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #89949c;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #89949c;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #007bff;
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #89949c;
+        }
+
+        select {
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            color: #89949c;
+            cursor: pointer;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .footer-bottom-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 10px;
+            }
+
+            .footer-links {
+                order: 1;
+            }
+
+            .language {
+                order: 2;
+                margin-top: 10px;
+            }
+
+            .copyright {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p class="copyright">©2022-2023 Trustco.</p>
+            <div class="footer-links">
+                <a href="#">Term of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Language</a>
+            </div>
+            <div class="language">
+                <span class="globe-icon">🌐</span>
+                <select>
+                    <option>English</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
