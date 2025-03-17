@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brands</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+        .trusted-brands {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .trusted-text {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+
+        .brand-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: auto;
+        }
+
+        .brand-logos img {
+            max-width: 100px;
+            height: auto;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: 0.3s ease-in-out;
+        }
+
+        .brand-logos img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .brand-logos {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .brand-logos img {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="trusted-brands">
+        <p class="trusted-text">Trusted by the best in the world</p>
+        <div class="brand-logos">
+            <img src="/image/google.png" alt="Google">
+            <img src="/image/atlassian.png" alt="Atlassian">
+            <img src="/image/canon.png" alt="Canon">
+            <img src="/image/walmart.png" alt="Walmart">
+            <img src="/image/amazon.png" alt="Amazon">
+        </div>
+    </section>
+
+</body>
+
+</html>

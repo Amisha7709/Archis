@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonials</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+        .testimonials {
+            padding: 50px;
+            margin: auto;
+            text-align: center;
+            background: #F2F5F6;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .see-all {
+            font-size: 16px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .testimonial-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            min-width: 300px;
+            text-align: left;
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 70px;
+            color: #f4a261;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            color: #444;
+            margin: 40px 0 20px;
+            line-height: 1.5;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 16px;
+            color: #111;
+        }
+
+        .designation {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 5px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot.active {
+            background: #00334e;
+            width: 50px;
+            height: 8px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials { 
+                padding: 10px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .testimonial-container {
+                overflow: auto;
+            }
+
+            .carousel-dots {
+                margin-top: 10px;
+            }
+
+            .see-all {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="testimonials">
+        <div class="header">
+            <h1>We Believe people we trust</h1>
+            <a href="#" class="see-all">See All ➜</a>
+        </div>
+
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <p class="testimonial-text">
+                    I'm totally unconvinced that two people can find a person they haven't known previously,
+                    and become an effective co-founder.
+                </p>
+                <div class="profile">
+                    <img src="/image/testimonial1.png" alt="Andrew Wilkins">
+                    <div>
+                        <p class="name">Andrew Wilkins</p>
+                        <p class="designation">Managing Director, Yess Company</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <p class="testimonial-text">
+                    Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!
+                </p>
+                <div class="profile">
+                    <img src="/image/testimonial2.png" alt="Daisy Phelps">
+                    <div>
+                        <p class="name">Daisy Phelps</p>
+                        <p class="designation">Digital Marketing Director, Monatic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+</body>
+
+</html>
