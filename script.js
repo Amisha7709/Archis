@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .catch(error => console.error(error));
     }
+
     // Load sections dynamically
     loadSection("navbar", "components/navbar/navbar.html");
     loadSection("hero", "components/hero/hero.html");
@@ -23,13 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
     loadSection("bridge", "components/bridge/bridge.html");
     loadSection("testimonials", "components/testimonials/testimonials.html");
     loadSection("news", "components/news/news.html");
-    loadSection("banner", "components/banner/banner/banner.html");
+    loadSection("banner", "components/banner/banner.html");
     loadSection("contact", "components/contact/contact.html");
     loadSection("footer", "components/footer/footer.html");
     loadSection("footer-bottom", "components/footer-bottom/footer-bottom.html");
 
+    // Toggle 'show' class on mobile menu
+    document.getElementById("navbar").addEventListener("click", function (event) {
+        if (event.target.id === "hamburger-menu") {
+            event.preventDefault();
+            document.getElementById("mobileMenu").classList.toggle("show");
+        }
+    });
+
     function showContactPage() {
-        document.getElementById("content").style.display = "none"; 
+        document.getElementById("content").style.display = "none";
         document.getElementById("contact").style.display = "block";
         document.getElementById("contact-link").style.fontWeight = "bold";
         document.getElementById("features-link").style.fontWeight = "normal";
@@ -46,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target.id === "contact-link") {
             event.preventDefault();
             showContactPage();
-        }if (event.target.id === "features-link") {
+        } if (event.target.id === "features-link") {
             event.preventDefault();
             showAllPages();
         }

@@ -103,7 +103,7 @@
     .hamburger {
         display: block;
     }
-
+    
     .mobile-menu.show {
         display: flex;
     }
