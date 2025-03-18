@@ -1,30 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // ✅ Toggle Menu
-    const hamburger = document.getElementById("hamburger-menu");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    if (hamburger) {
-        hamburger.addEventListener("click", function () {
-            mobileMenu.classList.toggle("show");
-        });
-    }
-
-    // ✅ Scroll to Contact Section
-    const contactLink = document.getElementById("contact-link");
-    const contactSection = document.getElementById("contact-section");
-
-    if (contactLink && contactSection) {
-        contactLink.addEventListener("click", function (event) {
-            event.preventDefault();
-            contactSection.scrollIntoView({ behavior: "smooth" });
-        });
-    }
-});
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
     function loadSection(sectionId, filePath) {
         fetch(filePath)
             .then(response => {
@@ -39,18 +13,44 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error(error));
     }
     // Load sections dynamically
-    loadSection("navbar", "components/navbar.html");
-    loadSection("hero", "components/hero.html");
-    loadSection("brand", "components/brands.html");
-    loadSection("video", "components/video.html");
-    loadSection("benefits", "components/benefits.html");
-    loadSection("star", "components/star.html");
-    loadSection("founder", "components/founder.html");
-    loadSection("bridge", "components/bridge.html");
-    loadSection("testimonials", "components/testimonials.html");
-    loadSection("news", "components/news.html");
-    loadSection("banner", "components/banner.html");
-    loadSection("contact", "components/contact.html");
-    loadSection("footer", "components/footer.html");
-    loadSection("footer-bottom", "components/footer-bottom.html");
+    loadSection("navbar", "components/navbar/navbar.html");
+    loadSection("hero", "components/hero/hero.html");
+    loadSection("brand", "components/brands/brands.html");
+    loadSection("video", "components/video/video.html");
+    loadSection("benefits", "components/benefits/benefits.html");
+    loadSection("star", "components/star/star.html");
+    loadSection("founder", "components/founder/founder.html");
+    loadSection("bridge", "components/bridge/bridge.html");
+    loadSection("testimonials", "components/testimonials/testimonials.html");
+    loadSection("news", "components/news/news.html");
+    loadSection("banner", "components/banner/banner/banner.html");
+    loadSection("contact", "components/contact/contact.html");
+    loadSection("footer", "components/footer/footer.html");
+    loadSection("footer-bottom", "components/footer-bottom/footer-bottom.html");
+
+    function showContactPage() {
+        document.getElementById("content").style.display = "none"; 
+        document.getElementById("contact").style.display = "block";
+        document.getElementById("contact-link").style.fontWeight = "bold";
+        document.getElementById("features-link").style.fontWeight = "normal";
+    }
+
+    function showAllPages() {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("contact-link").style.fontWeight = "normal";
+        document.getElementById("features-link").style.fontWeight = "bold";
+    }
+
+    document.getElementById("navbar").addEventListener("click", function (event) {
+        if (event.target.id === "contact-link") {
+            event.preventDefault();
+            showContactPage();
+        }if (event.target.id === "features-link") {
+            event.preventDefault();
+            showAllPages();
+        }
+    });
+
+    showAllPages();
 });
