@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <style>
+        #contact-section {
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+            text-align: center;
+        }
+
+        .contact-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            color: #043A53;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        form {
+            background: #fff;
+            color: #043A53 !important;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 20px;
+            border: 1.5px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+            width: 100%;
+            border: 1.5px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        .checkbox a {
+            color: #043A53;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(147, 147, 147) !important;
+            border-radius: 10px !important;
+            color: #043A53 !important;
+        }
+
+        .contact-top {
+            background-color: #F2F5F6;
+            padding: 60px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="contact-top">
+        <h1>We are here to help</h1>
+        <div class="container">
+            <p>Contact us if you have any questions about our company. Our best team will provide your answer within a few hours.</p>
+        </div>
+        <div class="contact-cards">
+            <div class="card">
+                <img src="/image/email.png" alt="Email Icon">
+                <h3>Email Us</h3>
+                <p>Ask anything by emailing us and we will respond within a few days.</p>
+                <a href="#">Send Email →</a>
+            </div>
+            <div class="card">
+                <img src="/image/location.png" alt="Location Icon">
+                <h3>Drop In</h3>
+                <p>You can meet us at our office and discuss the details of your questions.</p>
+                <a href="#">Get Direction →</a>
+            </div>
+            <div class="card">
+                <img src="/image/phone.png" alt="Phone Icon">
+                <h3>Call Us</h3>
+                <p>Call us if your question requires an immediate response.</p>
+                <a href="#">Send Email →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="container" style="gap: 1px;">
+            <h1>Leave us a message</h1>
+            <p>Contact us if you have any questions. Our best team will provide your answer within a few hours.</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Company Name">
+                    <input type="text" placeholder="Contact Number">
+                </div>
+                <textarea placeholder="How can we help?"></textarea>
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="checkbox">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree with the <a href="#">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
