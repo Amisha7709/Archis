@@ -1,0 +1,83 @@
+.founder-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+.content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #111;
+}
+
+.quote {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.founder-info {
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+}
+
+.designation {
+    font-size: 16px;
+    color: #777;
+}
+
+.cta-btn {
+    font-size: 17px;
+}
+
+.arrow {
+    background-color: #0c416d;
+    padding: 7px;
+}
+
+.founder-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.founder-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .founder-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-image {
+        margin-top: 20px;
+    }
+
+    .cta-btn {
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
