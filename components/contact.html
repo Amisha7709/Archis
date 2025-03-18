@@ -81,9 +81,10 @@
 
         textarea {
             height: 100px;
-            width: 100%;
+            width: -webkit-fill-available;
             border: 1.5px solid #ddd;
             border-radius: 5px;
+            padding: 20px;
         }
 
         .checkbox {
@@ -112,6 +113,35 @@
             padding: 60px;
             text-align: center;
         }
+
+        .Terms {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .contact-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .input-group input {
+                width: auto;
+            }
+
+            .Terms {
+                flex-direction: column;
+            }
+
+            #submit{
+                width: 100%;
+            }
+        }
     </style>
 
 </head>
@@ -120,7 +150,8 @@
     <section class="contact-top">
         <h1>We are here to help</h1>
         <div class="container">
-            <p>Contact us if you have any questions about our company. Our best team will provide your answer within a few hours.</p>
+            <p>Contact us if you have any questions about our company. Our best team will provide your answer within a
+                few hours.</p>
         </div>
         <div class="contact-cards">
             <div class="card">
@@ -160,13 +191,13 @@
                 </div>
                 <textarea placeholder="How can we help?"></textarea>
 
-                <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="Terms">
                     <div class="checkbox">
                         <input type="checkbox" id="terms">
                         <label for="terms">I agree with the <a href="#">Terms & Conditions</a></label>
                     </div>
 
-                    <button type="submit" class="button">Submit</button>
+                    <button type="submit" id="submit" class="button">Submit</button>
                 </div>
             </form>
         </div>
